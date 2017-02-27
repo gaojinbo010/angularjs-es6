@@ -1,0 +1,18 @@
+<navbar></navbar>
+<header>
+  <h1>header</h1>
+</header>
+<main>
+  <ul>
+    <li ng-repeat="item in $ctrl.datalist">{{::item.name}} -- {{::item.desc}}</li>
+  </ul>
+  <button ng-click="$ctrl.writemsg();">test</button>
+  <h1>{{::$ctrl.name }}</h1>
+  <input automaticfocus type="text" />
+  <div id="main" style="width: 300px;height:160px;"></div>
+  
+  <button ng-click="$ctrl._init();">init</button>
+
+  <!--<img ng-src="../../../imgs/imgbox1.jpg" style="width: 5rem;height: 5rem;" />-->
+  <!--<img ng-src="../../../imgs/larrow.png" style="width: 5rem;height: 5rem;" />-->
+</main>
